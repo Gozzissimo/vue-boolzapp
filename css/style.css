@@ -25,6 +25,7 @@ i {
 
 .round {
     border-radius: 50%;
+    overflow: hidden;
 }
 
 
@@ -58,14 +59,13 @@ i {
 /* header */
 /* user */
 .side-header {
-    background-color: tomato;
+    background-color: white;
     width: 30%;
     min-width: 400px;
 }
 
 .user-img {
     width: 45px;
-    overflow: hidden;
     margin-right: 5px;
 }
 
@@ -119,10 +119,10 @@ i {
     color: #4F7485;
 }
 
+/* contacts */
 /* search-bar */
 nav {
     height: 40px;
-    background-color: #F6F6F6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,6 +143,53 @@ nav .search-bar input {
     width: 80%;
 }
 
+/* contacts-list */
+
+.contacts{
+    background-color: #F6F6F6;
+}
+
+.contacts-window {
+    width: 99%;
+    height: 100%;
+    background-color: white;
+    border-right: 1px solid lightgray;
+}
+
+.contacts-list li {
+    display: flex;
+    padding: 10px;
+}
+
+.contacts-list li:not(:last-child) {
+    border-bottom: 1px solid lightgray;
+}
+
+.contacts-list .left-pic {
+    width: 15%;
+}
+.contacts-list li img {
+    width: 100%;
+}
+
+.center-contact-text {
+    margin: 0 10px;
+    width: 45%;
+}
+
+.center-contact-text .text-preview  {
+    font-size: 0.7em;
+    color: #999999;
+}
+
+.right-date{
+    width: 40%;
+    justify-self: flex-end;
+}
+.right-date .date-detail  {
+    font-size: 0.7em;
+    color: #999999;
+}
 
 
 /* main */
