@@ -251,6 +251,7 @@ main {
     display: flex;
     flex-direction: column;
     min-width: 250px;
+    margin: 5px;
 }
 
 .message.received {
