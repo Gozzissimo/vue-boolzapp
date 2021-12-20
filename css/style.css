@@ -23,6 +23,10 @@ i {
     margin: 5px;
 }
 
+.round {
+    border-radius: 50%;
+}
+
 
 /* containers */
 .container {
@@ -52,6 +56,7 @@ i {
 
 
 /* header */
+/* user */
 .side-header {
     background-color: tomato;
     width: 30%;
@@ -59,8 +64,7 @@ i {
 }
 
 .user-img {
-    border-radius: 50%;
-    width: 50px;
+    width: 45px;
     overflow: hidden;
     margin-right: 5px;
 }
@@ -82,6 +86,40 @@ i {
     display: flex;
     align-items: center;
 }
+
+/* notifications */
+.notifications {
+    height: 60px;
+    background-color: #8EDAFC;
+    display: flex;
+    align-items: center;
+}
+
+.notifications .round{
+    background-color: white;
+    margin-left: 10px;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+.notifications .round i{
+    color: #8EDAFC;
+}
+
+.notifications .notif-text {
+    margin-left: 10px;
+}
+.notifications .notif-title {
+    font-size: 0.8em;
+}
+.notifications .notif-toggle {
+    font-size: 0.7em;
+    color: #4F7485;
+}
+
+
 
 
 /* main */
