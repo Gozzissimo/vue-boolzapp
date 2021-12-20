@@ -119,9 +119,33 @@ i {
     color: #4F7485;
 }
 
+/* search-bar */
+nav {
+    height: 40px;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .search-bar {
+    background-color: white;
+    width: 95%;
+}
+
+nav .search-bar i{
+    width: 10%;
+    text-align: center;
+}
+
+nav .search-bar input {
+    border: none;
+    width: 80%;
+}
 
 
 
+/* main */
 /* main */
 main {
     background-color: mediumpurple;
