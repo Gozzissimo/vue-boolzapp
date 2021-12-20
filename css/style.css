@@ -8,6 +8,8 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+
+/* containers */
 .container {
     position: relative;
 }
@@ -25,11 +27,31 @@ html {
 .sub-container {
     height: 90%;
     width: 80%;
-    min-width: 1200px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: lightpink;
+    display: flex;
 }
+
+
+/* header */
+header {
+    background-color: lightskyblue;
+    width: 30%;
+    min-width: 400px;
+}
+
+
+/* main */
+main {
+    background-color: mediumpurple;
+    width: 70%;
+}
+
+
+
+
+
 
