@@ -8,6 +8,21 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+/* common */
+
+ul {
+    list-style: none;
+}
+
+.name {
+    font-size: 0.8em;
+}
+
+i {
+    color: #999999;
+    margin: 5px;
+}
+
 
 /* containers */
 .container {
@@ -37,10 +52,35 @@ html {
 
 
 /* header */
-header {
-    background-color: lightskyblue;
+.side-header {
+    background-color: tomato;
     width: 30%;
     min-width: 400px;
+}
+
+.user-img {
+    border-radius: 50%;
+    width: 50px;
+    overflow: hidden;
+    margin-right: 5px;
+}
+
+.user-img img{
+    width: 100%;
+}
+
+.grey-header {
+    height: 60px;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
 }
 
 
