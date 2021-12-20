@@ -27,7 +27,7 @@
 
         <div class="sub-container">
             <header class="side-header">
-                <div class="grey-header">
+                <div class="grey-bar">
                     <div class="user-info">
                         <div class="user-img round">
                             <img src="img/avatar_io.jpg" alt="user">
@@ -52,13 +52,14 @@
                 </div>
 
                 
+                <nav>
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    </div>
+                </nav>
+
                 <div class="contacts">
-                    <nav>
-                        <div class="search-bar">
-                            <i class="fas fa-search"></i>
-                            <input type="text" placeholder="Cerca o inizia una nuova chat">
-                        </div>
-                    </nav>
                     <div class="contacts-window">
                         <ul class="contacts-list">
                             <li>
@@ -95,26 +96,52 @@
             </header>
 
             <main>
-                <div class="contact-bar">
+                <div class="contact-bar grey-bar">
                     <div class="left-bar">
-                        <div class="contact-pic">
-                            <img src="" alt="">
+                        <div class="contact-pic round">
+                            <img src="img/avatar_2.jpg" alt="">
+                        </div>
+                        <div class="contact-details">
+                            <h2>Fabio</h2> 
+                            <h3>Ultimo accesso oggi alle 10/01/2020 15:30:55</h3>
                         </div>
                     </div>
                     <div class="right-bar">
-                        <i></i>
-                        <i></i>
-                        <i></i>
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-paperclip"></i>
+                        <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </div>
 
                 <div class="chat-window">
-                    <ul>
-                        <li class="sent"></li>
-                        <li class="received"></li>
+                    <ul class="chat">
+                        <li class="message received">
+                            <div class="text">
+                                La marianna va in campagna
+                            </div>
+                            <div class="date">
+                                10/01/2020 15:30:55
+                            </div>
+                        </li>
+                        <li class="message sent">
+                            <div class="text">
+                                sbagliato chat
+                            </div>
+                            <div class="date">
+                                10/01/2020 15:30:55
+                            </div>
+                        </li>
+                        <li class="message received">
+                            <div class="text">
+                                scusa
+                            </div>
+                            <div class="date">
+                                10/01/2020 15:30:55
+                            </div>
+                        </li>
                     </ul>
                 </div>
-                <div class="message-bar">
+                <div class="message-bar grey-bar">
                     <i></i>
                     <input type="text">
                     <i></i>
