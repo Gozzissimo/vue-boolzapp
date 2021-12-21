@@ -166,6 +166,7 @@ nav .search-bar input {
     display: flex;
     background-color: white;
     padding: 10px;
+    cursor: pointer;
 }
 
 .contacts-list li:not(:last-child) {

@@ -85,7 +85,7 @@
                 <div class="contact-bar grey-bar">
                     <div class="left-bar">
                         <div class="contact-pic round">
-                            <img src="img/avatar_2.jpg" alt="">
+                            <img :src="`img/avatar${contacts[counter].avatar}.jpg`" alt="">
                         </div>
                         <div class="contact-details">
                             <h2>{{ contacts[counter].name }}</h2> 
