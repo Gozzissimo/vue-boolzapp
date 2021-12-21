@@ -272,7 +272,6 @@ main {
 
 .message .text {
     align-self: flex-start;
-    justify-self: center;
     font-weight: bold;
     padding: 2px;
 }
