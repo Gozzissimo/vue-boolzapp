@@ -8,6 +8,10 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    min-width: 1050px;
+}
+
 /* common */
 
 ul {
@@ -67,11 +71,12 @@ i {
 /* user */
 .side-header {
     width: 30%;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 .user-img {
     width: 45px;
+    height: 45px;
     margin-right: 5px;
 }
 
@@ -213,6 +218,7 @@ main {
 
 .contact-pic {
     width: 45px;
+    height: 45px;
     margin-right: 5px;
 }
 
