@@ -65,15 +65,15 @@
                             <li v-for="(contact, index) in contacts">
                                 <div class="left-pic">
                                     <div class="contact-pic round">
-                                        <img src="`img/avatar${[contacts][avatar]}.jpg`" alt="">
+                                        <img :src="`img/avatar${contact.avatar}.jpg`" alt="">
                                     </div>
                                 </div>
                                 <div class="center-contact-text">
                                     <h2 class="contact-name name">{{ contact.name }}</h2>
-                                    <small class="text-preview"></small>
+                                    <small class="text-preview">Hai portato..</small>
                                 </div>
                                 <div class="right-date">
-                                    <small class="date-detail"></small>
+                                    <small class="date-detail">10/01/2020 15:30:55</small>
                                 </div>
                             </li>
                         </ul>
