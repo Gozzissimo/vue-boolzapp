@@ -62,7 +62,7 @@
                 <div class="contacts">
                     <div class="contacts-window">
                         <ul class="contacts-list">
-                            <li v-for="(contact, index) in contacts">
+                            <li @click="contactSelect(index)" v-for="(contact, index) in contacts">
                                 <div class="left-pic">
                                     <div class="contact-pic round">
                                         <img :src="`img/avatar${contact.avatar}.jpg`" alt="">
