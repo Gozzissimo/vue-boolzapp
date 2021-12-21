@@ -88,7 +88,7 @@
                             <img src="img/avatar_2.jpg" alt="">
                         </div>
                         <div class="contact-details">
-                            <h2>Fabio</h2> 
+                            <h2>{{ contacts[counter].name }}</h2> 
                             <h3>Ultimo accesso oggi alle 10/01/2020 15:30:55</h3>
                         </div>
                     </div>
@@ -101,28 +101,12 @@
 
                 <div class="chat-window">
                     <ul class="chat">
-                        <li class="message received">
+                        <li v-for="(contact, index) in contacts[counter].messages" :class="contact.status == 'received' ? 'received' : 'sent'" class="message">
                             <div class="text">
-                                La marianna va in campagna
+                                {{ contact.text }}
                             </div>
                             <div class="date">
-                                10/01/2020 15:30:55
-                            </div>
-                        </li>
-                        <li class="message sent">
-                            <div class="text">
-                                sbagliato chat
-                            </div>
-                            <div class="date">
-                                10/01/2020 15:30:55
-                            </div>
-                        </li>
-                        <li class="message received">
-                            <div class="text">
-                                scusa
-                            </div>
-                            <div class="date">
-                                10/01/2020 15:30:55
+                                {{ contact.date }}
                             </div>
                         </li>
                     </ul>
