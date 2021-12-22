@@ -101,12 +101,12 @@
 
                 <div class="chat-window">
                     <ul class="chat">
-                        <li v-for="(contact, index) in contacts[counter].messages" :class="contact.status == 'received' ? 'received' : 'sent'" class="message">
+                        <li v-for="(message, index) in contacts[counter].messages" :class="message.status == 'received' ? 'received' : 'sent'" class="message">
                             <div class="text">
-                                {{ contact.text }}
+                                {{ message.text }}
                             </div>
                             <div class="date">
-                                {{ contact.date }}
+                                {{ message.date }}
                             </div>
                         </li>
                     </ul>

@@ -95,14 +95,9 @@ const app = new Vue(
             ]
         },
 
-        created() {
-            console.log(this.contacts);
-        },
-
         methods: {
             contactSelect(index) {
                 this.counter = index;
-                console.log(this.counter);
             }
         }
     }
