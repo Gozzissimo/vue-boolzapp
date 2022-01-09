@@ -6,6 +6,7 @@ const app = new Vue(
     {
         el: '#app',
         data: {
+            newMessage: '',
             counter: 0,
             contacts: [
                 {
@@ -98,7 +99,17 @@ const app = new Vue(
         methods: {
             contactSelect(index) {
                 this.counter = index;
-            }
+            },
+
+            sendMessage(index) {
+                if (this.newMessage.trim() !== '') {
+                    this.contacts[index].messages.push({
+                        date: "data finta",
+                        text: this.newMessage,
+                        status: "sent"});
+                    this.newMessage = '';
+                }
+            },
         }
     }
 );
