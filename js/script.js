@@ -108,8 +108,19 @@ const app = new Vue(
                         text: this.newMessage,
                         status: "sent"});
                     this.newMessage = '';
-                }
+                };
+                setTimeout(()=>{
+                    this.defaultResp(index)
+                },1000);
             },
+
+            defaultResp(index) {
+                this.contacts[index].messages.push({
+                    date: "data finta",
+                    text: "ok",
+                    status: "received"
+                });
+            }
         }
     }
 );
