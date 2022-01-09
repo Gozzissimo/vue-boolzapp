@@ -55,14 +55,14 @@
                 <nav>
                     <div class="search-bar">
                         <i class="fas fa-search"></i>
-                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+                        <input v-model="contactName" @keyup="filter()" type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
                 </nav>
 
                 <div class="contacts">
                     <div class="contacts-window">
                         <ul class="contacts-list">
-                            <li @click="contactSelect(index)" v-for="(contact, index) in contacts">
+                            <li @click="contactSelect(index)" v-for="(contact, index) in contacts" v-if="contact.visible">
                                 <div class="left-pic">
                                     <div class="contact-pic round">
                                         <img :src="`img/avatar${contact.avatar}.jpg`" alt="">

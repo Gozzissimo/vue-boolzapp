@@ -7,6 +7,7 @@ const app = new Vue(
         el: '#app',
         data: {
             newMessage: '',
+            contactName: '',
             counter: 0,
             contacts: [
                 {
@@ -120,7 +121,20 @@ const app = new Vue(
                     text: "ok",
                     status: "received"
                 });
+            },
+            
+            filter() {
+                console.log('ciao');
+                for (let i = 0; i < this.contacts.length; i++) {
+                    if (this.contactName == this.contacts[i].name) {
+                        this.contacts[i].visible = true;
+                    } else {
+                        this.contacts[i].visible = false;
+                    }
+                }
             }
+
+
         }
     }
 );
