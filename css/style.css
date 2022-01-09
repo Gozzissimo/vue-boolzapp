@@ -259,6 +259,7 @@ main {
     flex-direction: column;
     min-width: 250px;
     margin: 5px;
+    position: relative;
 }
 
 .message.received {
@@ -282,6 +283,36 @@ main {
     justify-content: flex-end;
     color: grey;
     font-size: 0.8em;
+}
+
+.fa-chevron-down {
+    align-self: flex-end;
+    justify-content: flex-end;
+    color: grey;
+    font-size: 0.8em;
+}
+
+.fa-chevron-down:hover, 
+.fa-chevron-down:active, 
+.fa-chevron-down:focus {
+    cursor: pointer;
+}
+
+.drop-menu {
+    position: absolute;
+    top: 90%;
+    right: 10%;
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+}
+
+.drop-menu div {
+    margin: 10px;
 }
 
 /* message bar */

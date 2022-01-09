@@ -6,6 +6,7 @@ const app = new Vue(
     {
         el: '#app',
         data: {
+            messageMenu: false,
             newMessage: '',
             contactName: '',
             counter: 0,
@@ -132,9 +133,17 @@ const app = new Vue(
                         this.contacts[i].visible = false;
                     };
                 }
+            },
+
+            dropdownMenu(message, index) {
+                this.messageMenu = true;
+            },
+
+            deleteMessage(message, index) {
+                this.contacts
             }
-
-
         }
+
+        // array[array.length - 1]
     }
 );

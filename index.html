@@ -108,6 +108,11 @@
                             <div class="date">
                                 {{ message.date }}
                             </div>
+                            <i class="fas fa-chevron-down" @click="dropdownMenu(message, index)"></i>
+                            <div v-show="messageMenu" class="drop-menu" >
+                                <div>Message info</div>
+                                <div @click="deleteMessage(message, index)">Delete message</div>
+                            </div>
                         </li>
                     </ul>
                 </div>
