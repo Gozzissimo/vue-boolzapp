@@ -126,11 +126,11 @@ const app = new Vue(
             filter() {
                 console.log('ciao');
                 for (let i = 0; i < this.contacts.length; i++) {
-                    if (this.contactName == this.contacts[i].name) {
+                    if (this.contacts[i].name.toLowerCase().includes(this.contactName.toLowerCase())) {
                         this.contacts[i].visible = true;
                     } else {
                         this.contacts[i].visible = false;
-                    }
+                    };
                 }
             }
 
