@@ -62,18 +62,20 @@
                 <div class="contacts">
                     <div class="contacts-window">
                         <ul class="contacts-list">
-                            <li @click="contactSelect(index)" v-for="(contact, index) in contacts" v-if="contact.visible">
-                                <div class="left-pic">
-                                    <div class="contact-pic round">
-                                        <img :src="`img/avatar${contact.avatar}.jpg`" alt="">
+                            <li @click="contactSelect(index)" v-for="(contact, index) in contacts">
+                                <div class="friend-contact" v-if="contact.visible">
+                                    <div class="left-pic">
+                                        <div class="contact-pic round">
+                                            <img :src="`img/avatar${contact.avatar}.jpg`" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="center-contact-text">
-                                    <h2 class="contact-name name">{{ contact.name }}</h2>
-                                    <small class="text-preview">Hai portato..</small>
-                                </div>
-                                <div class="right-date">
-                                    <small class="date-detail">10/01/2020 15:30:55</small>
+                                    <div class="center-contact-text">
+                                        <h2 class="contact-name name">{{ contact.name }}</h2>
+                                        <small class="text-preview">Hai portato..</small>
+                                    </div>
+                                    <div class="right-date">
+                                        <small class="date-detail">10/01/2020 15:30:55</small>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -109,6 +111,8 @@
                                 {{ message.date }}
                             </div>
                             <i class="fas fa-chevron-down" @click="dropdownMenu(message, index)"></i>
+
+                            <!-- hidden menu -->
                             <div v-show="messageMenu" class="drop-menu" >
                                 <div>Message info</div>
                                 <div @click="deleteMessage(message, index)">Delete message</div>

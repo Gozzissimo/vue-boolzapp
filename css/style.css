@@ -162,21 +162,21 @@ nav .search-bar input {
     margin-right: 10px;
 }
 
-.contacts-list li {
+.contacts-list .friend-contact {
     display: flex;
     background-color: white;
     padding: 10px;
     cursor: pointer;
 }
 
-.contacts-list li:not(:last-child) {
+.contacts-list .friend-contact:not(:last-child) {
     border-bottom: 1px solid lightgray;
 }
 
 .contacts-list .left-pic {
     width: 15%;
 }
-.contacts-list li img {
+.contacts-list .friend-contact img {
     width: 100%;
 }
 

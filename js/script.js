@@ -125,7 +125,7 @@ const app = new Vue(
             },
             
             filter() {
-                console.log('ciao');
+                // console.log('ciao');
                 for (let i = 0; i < this.contacts.length; i++) {
                     if (this.contacts[i].name.toLowerCase().includes(this.contactName.toLowerCase())) {
                         this.contacts[i].visible = true;
@@ -139,8 +139,8 @@ const app = new Vue(
                 this.messageMenu = true;
             },
 
-            deleteMessage(message, index) {
-                this.contacts
+            deleteMessage(index) {
+                this.contacts[this.counter].messages[index].splice(index, 1);
             }
         }
 
